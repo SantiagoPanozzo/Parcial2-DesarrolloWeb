@@ -17,4 +17,9 @@ export class NotificationService {
   public clear(): void {
     this.notifications = [];
   }
+
+  public remove(message: string): void {
+    const index = this.notifications.findIndex((noti) => noti.message === message);
+    this.notifications.splice(index, 1);
+  }
 }

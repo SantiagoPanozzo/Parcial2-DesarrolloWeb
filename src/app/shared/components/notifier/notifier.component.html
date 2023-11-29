@@ -2,7 +2,7 @@
     <div class="row" *ngFor="let notification of this.notificationService.notifications">
         <div class="alert alert-{{notification.type}} alert-dismissible fade show" role="alert">
             <strong>{{notification.type}}</strong> {{notification.message}}
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="this.notificationService.clear()">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="this.notificationService.remove(notification.message)">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
