@@ -1,0 +1,8 @@
+<h2 class="mb-2">Tests</h2>
+<button class="btn btn-success mb-2" routerLink="/admin/tests/new">Nuevo Test</button>
+
+<ul class="row">
+    <div *ngFor="let test of tests" class="col-md-4 mt-5">
+        <app-tests-list-item [test]="test" (onDelete)="this.deleteTest($event)"></app-tests-list-item>
+    </div>
+</ul> 

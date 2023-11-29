@@ -1,0 +1,11 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{this.test.id}}: {{this.test.initials}}</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">{{this.test.name}}</h6>
+      <p class="card-text">{{this.test.description}}</p>
+      <p class="card-text">Partes: {{this.test.partCount}}</p>
+      <p class="card-text">{{this.test.isActive ? 'Activa' : 'Inactiva'}}</p>
+      <a routerLink="/admin/tests/{{this.test.id}}" class="btn btn-primary">Editar</a>
+      <button class="btn btn-danger" (click)="this.deleteTest()">Eliminar</button>
+    </div>
+  </div>

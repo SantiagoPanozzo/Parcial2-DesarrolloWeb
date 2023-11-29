@@ -1,0 +1,31 @@
+<h2>Nuevo Test</h2>
+
+<form #formulario="ngForm" (ngSubmit)="onSubmit(formulario)" class="form-group">
+    <div class="col">
+        <div class="row pt-2 pb-2">
+            <label for="name"><h4>Nombre</h4></label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Nombre" [(ngModel)]="this.test.name" required>
+        </div>
+        <div class="row pt-2 pb-2">
+            <label for="description"><h4>Descripción</h4></label>
+            <input type="text" class="form-control" name="description" id="description" placeholder="Descripción" [(ngModel)]="this.test.description" required>
+        </div>
+        <div class="row pt-2 pb-2">
+            <label for="initials"><h4>Iniciales</h4></label>
+            <input type="text" class="form-control" name="initials" id="initials" placeholder="Iniciales" [(ngModel)]="this.test.initials" required>
+        </div>
+        <div class="row-4 pt-2 pb-2" *ngIf="this.test.id">
+            <label for="isactive" class="mr-4"><h4>Activo</h4></label>
+            <input type="checkbox" class="ml-4" name="isactive" id="isactive" [(ngModel)]="this.test.isActive" required>
+        </div>
+        <div class="row mt-2">
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+            <div class="col-auto">
+                <a class="btn btn-primary" routerLink="/admin/tests">Volver</a>
+            </div>
+        </div>
+    </div>
+</form>
+
