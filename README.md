@@ -2,7 +2,7 @@
 Santiago Panozzo
 
 ## Como correr:
-1. Clonar el repositorio con "git clone (url del repositorio)"
+1. Clonar el repositorio con "git clone https://github.com/SantiagoPanozzo/Parcial2-DesarrolloWeb.git"
 2. Navegar a la carpeta haciendo "cd parcial2" desde una terminal.
 3. Instalar las dependencias con "npm install"
 4. Iniciar el proyecto con "ng serve"
